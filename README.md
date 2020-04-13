@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## ESLint Config
+
+ESLint Config , Link : [ESLint](https://eslint.org/docs/rules/)
+* 1- `npm i -D eslint`
+* 2- `npm i -D prettier`
+
+* Create : `/.eslintrc.json
+* Update : `/package.json
+
+Add config :
+https://www.npmjs.com/package/eslint-plugin-prettier
+https://github.com/prettier/eslint-config-prettier
+
+## Husky Commit
+Lien : https://github.com/typicode/husky
