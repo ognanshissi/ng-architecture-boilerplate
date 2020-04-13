@@ -40,7 +40,7 @@ export class AbstractService<T> {
   }
 
   update(id: string, body: T): Observable<T> {
-    return this.http.delete<T>(`${this.apiUrl}/${this.resources}/${id}`, body);
+    return this.http.put<T>(`${this.apiUrl}/${this.resources}/${id}`, body);
   }
 
 }
