@@ -1,5 +1,5 @@
 /**
- * This class ensure Core module the be loaded only once
+ * This class ensure Core module has been loaded only once
  * Inside  the app
  */
 export class EnsureModuleLoadedOnceGuard {

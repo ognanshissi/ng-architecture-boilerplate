@@ -6,7 +6,7 @@ import {AuthInterceptor} from "./interceptors/auth.interceptor";
 
 @NgModule({
   imports: [CommonModule, HttpClientModule],
-  declarations: [], // component that should call once on the all app
+  declarations: [], // component that should be call once on the all app
   providers: [
     {
       provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true
