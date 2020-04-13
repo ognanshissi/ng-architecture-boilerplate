@@ -7,7 +7,7 @@
 
 // This is only to demonstrate the use of inheritance
 import {AbstractService} from "./abstract.service";
-import {IUser} from "../models/user";
+import {IUser, User} from "../models/user";
 import {HttpClient} from "@angular/common/http";
 import {Injectable} from "@angular/core";
 
@@ -23,5 +23,12 @@ export class UserService extends AbstractService<IUser> {
   ];
   constructor(protected http: HttpClient) {
     super(http);
+    this.objectListSubject$.next(this.objectList);
+  }
+
+  addUser() {
+    const newUser = {email: 'newemail@mail.com'};
+    this.objectList = [...this.objectList, newUser];
+    this.objectListSubject$.next(this.objectList);
   }
 }

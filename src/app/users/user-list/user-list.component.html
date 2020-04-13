@@ -1,5 +1,7 @@
 <h2>Users List</h2>
 
+<button (click)="add.emit()" >Add User</button>
+
 <ul>
   <li *ngFor="let user of users"> {{ user.email }}</li>
 </ul>

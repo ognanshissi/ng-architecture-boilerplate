@@ -2,7 +2,6 @@ import {Injectable} from "@angular/core";
 import {environment} from "../../../environments/environment";
 import {HttpClient} from "@angular/common/http";
 import {BehaviorSubject, Observable} from "rxjs";
-import {IUser} from "../models/user";
 import {map} from "rxjs/operators";
 
 @Injectable()
@@ -14,7 +13,7 @@ export class AbstractService<T> {
   protected objectList: T[] = [];
 
 
-  private objectListSubject$: BehaviorSubject<T[]> = new BehaviorSubject<T[]>(this.objectList);
+  protected objectListSubject$: BehaviorSubject<T[]> = new BehaviorSubject<T[]>(this.objectList);
 
   objectListChanged$ = this.objectListSubject$.asObservable();
 
