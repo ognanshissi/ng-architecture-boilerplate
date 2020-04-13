@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 // Shared module is used inside Feature Module
 
@@ -9,7 +10,7 @@ const MODULES = [CommonModule];
 
 @NgModule({
   imports: [MODULES],
-  exports: [MODULES],
-  declarations: [],
+  exports: [MODULES, TruncatePipe],
+  declarations: [TruncatePipe],
 })
 export class SharedModule {}

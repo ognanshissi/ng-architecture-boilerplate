@@ -5,3 +5,9 @@
 <ul>
   <li *ngFor="let user of users"> {{ user.email }}</li>
 </ul>
+
+
+<p>
+  {{ 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam architecto autem commodi culpa deleniti,\n' +
+'  dolor ipsum laudantium odio officiis perspiciatis quae quidem quod unde ut? Deleniti possimus tempore vel?' | truncate: 30}}
+</p>
